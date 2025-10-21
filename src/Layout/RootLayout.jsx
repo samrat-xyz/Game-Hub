@@ -1,10 +1,19 @@
 import React from 'react'
+import Navbar from '../components/Header/Navbar/Navbar'
+import { Outlet } from 'react-router'
 
 function RootLayout() {
   return (
-    <div>
-      Hello i am from root
-    </div>
+    <>
+      <div>
+        <header>
+          <Navbar/>
+        </header>
+        <main>
+          <Outlet/>
+        </main>
+      </div>
+    </>
   )
 }
 

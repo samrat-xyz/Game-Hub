@@ -1,0 +1,66 @@
+[
+  {
+    "id" : 0,
+    "category_name":"All"
+  },
+  {
+    "id": 1,
+    "category_name": "FPS"
+  },
+  {
+    "id": 2,
+    "category_name": "Platformer"
+  },
+  {
+    "id": 3,
+    "category_name": "Racing"
+  },
+  {
+    "id": 4,
+    "category_name": "Adventure"
+  },
+  {
+    "id": 5,
+    "category_name": "Horror"
+  },
+  {
+    "id": 6,
+    "category_name": "RPG"
+  },
+  {
+    "id": 7,
+    "category_name": "Action"
+  },
+  {
+    "id": 8,
+    "category_name": "RPG"
+  },
+  {
+    "id": 9,
+    "category_name": "Puzzle"
+  },
+  {
+    "id": 10,
+    "category_name": "Sports"
+  },
+  {
+    "id": 11,
+    "category_name": "Strategy"
+  },
+  {
+    "id": 12,
+    "category_name": "Adventure"
+  },
+  {
+    "id": 13,
+    "category_name": "Racing"
+  },
+  {
+    "id": 14,
+    "category_name": "Simulation"
+  },
+  {
+    "id": 15,
+    "category_name": "Sports"
+  }
+]

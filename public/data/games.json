@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknowns Battle Ground: PUBG",
+    "coverPhoto": "https://example.com/images/pubg.png",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": 4.5,
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Starlight Runner",
+    "coverPhoto": "https://example.com/images/starlight.png",
+    "category": "Platformer",
+    "downloadLink": "https://example.com/starlight",
+    "description": "A fast-paced pixel platformer with neon aesthetics and tight controls.",
+    "ratings": 4.8,
+    "developer": "IndieNova"
+  },
+  {
+    "id": "3",
+    "title": "Neon Racers",
+    "coverPhoto": "https://example.com/images/neonracers.png",
+    "category": "Racing",
+    "downloadLink": "https://example.com/neonracers",
+    "description": "High-speed futuristic racing with customizable hover-cars.",
+    "ratings": 4.6,
+    "developer": "Turbo Indie"
+  },
+  {
+    "id": "4",
+    "title": "Space Odyssey",
+    "coverPhoto": "https://example.com/images/spaceodyssey.png",
+    "category": "Adventure",
+    "downloadLink": "https://example.com/spaceodyssey",
+    "description": "Explore the galaxies and complete missions in this space adventure.",
+    "ratings": 4.7,
+    "developer": "Galaxy Games"
+  },
+  {
+    "id": "5",
+    "title": "Zombie Survival",
+    "coverPhoto": "https://example.com/images/zombie.png",
+    "category": "Horror",
+    "downloadLink": "https://example.com/zombie",
+    "description": "Survive waves of zombies in a post-apocalyptic city.",
+    "ratings": 4.4,
+    "developer": "Horror Inc"
+  },
+  {
+    "id": "6",
+    "title": "Fantasy Quest",
+    "coverPhoto": "https://example.com/images/fantasyquest.png",
+    "category": "RPG",
+    "downloadLink": "https://example.com/fantasyquest",
+    "description": "Embark on epic quests in a magical fantasy world.",
+    "ratings": 4.9,
+    "developer": "MagicSoft"
+  },
+  {
+    "id": "7",
+    "title": "Cyberpunk Streets",
+    "coverPhoto": "https://example.com/images/cyberpunk.png",
+    "category": "Action",
+    "downloadLink": "https://example.com/cyberpunk",
+    "description": "Fight and survive in the neon-lit cyberpunk city.",
+    "ratings": 4.3,
+    "developer": "NeoGames"
+  },
+  {
+    "id": "8",
+    "title": "Dragon Slayer",
+    "coverPhoto": "https://example.com/images/dragonslayer.png",
+    "category": "RPG",
+    "downloadLink": "https://example.com/dragonslayer",
+    "description": "Become a hero and slay dragons in mystical lands.",
+    "ratings": 4.7,
+    "developer": "DragonWorks"
+  },
+  {
+    "id": "9",
+    "title": "Puzzle Mania",
+    "coverPhoto": "https://example.com/images/puzzlemania.png",
+    "category": "Puzzle",
+    "downloadLink": "https://example.com/puzzlemania",
+    "description": "Solve challenging puzzles and brain teasers.",
+    "ratings": 4.2,
+    "developer": "Brainy Studios"
+  },
+  {
+    "id": "10",
+    "title": "Street Basketball",
+    "coverPhoto": "https://example.com/images/basketball.png",
+    "category": "Sports",
+    "downloadLink": "https://example.com/streetbasketball",
+    "description": "Play 3v3 street basketball in urban courts.",
+    "ratings": 4.5,
+    "developer": "SportsHub"
+  },
+  {
+    "id": "11",
+    "title": "Robo Wars",
+    "coverPhoto": "https://example.com/images/robowars.png",
+    "category": "Strategy",
+    "downloadLink": "https://example.com/robowars",
+    "description": "Build and battle robots in strategic arenas.",
+    "ratings": 4.6,
+    "developer": "MechSoft"
+  },
+  {
+    "id": "12",
+    "title": "Island Survival",
+    "coverPhoto": "https://example.com/images/islandsurvival.png",
+    "category": "Adventure",
+    "downloadLink": "https://example.com/islandsurvival",
+    "description": "Survive on a deserted island and craft your shelter.",
+    "ratings": 4.4,
+    "developer": "IslandGames"
+  },
+  {
+    "id": "13",
+    "title": "Racing Rivals",
+    "coverPhoto": "https://example.com/images/racingrivals.png",
+    "category": "Racing",
+    "downloadLink": "https://example.com/racingrivals",
+    "description": "Compete in high-speed races with rivals worldwide.",
+    "ratings": 4.7,
+    "developer": "Speedster Studios"
+  },
+  {
+    "id": "14",
+    "title": "Magic Academy",
+    "coverPhoto": "https://example.com/images/magicacademy.png",
+    "category": "Simulation",
+    "downloadLink": "https://example.com/magicacademy",
+    "description": "Train to become a powerful wizard in a magical school.",
+    "ratings": 4.8,
+    "developer": "WizardWorks"
+  },
+  {
+    "id": "15",
+    "title": "Ultimate Soccer",
+    "coverPhoto": "https://example.com/images/ultimatesoccer.png",
+    "category": "Sports",
+    "downloadLink": "https://example.com/ultimatesoccer",
+    "description": "Play realistic soccer matches with advanced controls.",
+    "ratings": 4.5,
+    "developer": "GoalGames"
+  }
+]
