@@ -26,12 +26,12 @@ function Navbar() {
       </li>
       <li>
         <NavLink
-          to="/developers"
+          to="/installed"
           className={({ isActive }) =>
             isActive ? "text-primary font-semibold" : ""
           }
         >
-          Developers
+          Installed
         </NavLink>
       </li>
     </>
@@ -41,13 +41,13 @@ function Navbar() {
     <div className="bg-base-100 shadow-sm">
       <div className="navbar w-11/12 mx-auto">
         <div className="flex-1">
-          <Link to="/" className="normal-case text-xl">
+          <Link to="/" className="normal-case text-3xl">
             GameHub
           </Link>
         </div>
 
         <div className="hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+          <ul className="menu menu-horizontal px-1 text-lg">{navLinks}</ul>
         </div>
 
         <div className="flex-none">

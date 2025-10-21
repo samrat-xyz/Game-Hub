@@ -12,7 +12,7 @@
   {
     "id": "2",
     "title": "Starlight Runner",
-    "coverPhoto": "https://example.com/images/starlight.png",
+    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo291bSGjpzic4KeT_d_kkVOuzfXpY66VXGQ&s",
     "category": "Platformer",
     "downloadLink": "https://example.com/starlight",
     "description": "A fast-paced pixel platformer with neon aesthetics and tight controls.",
@@ -22,7 +22,7 @@
   {
     "id": "3",
     "title": "Neon Racers",
-    "coverPhoto": "https://example.com/images/neonracers.png",
+    "coverPhoto": "https://i.insider.com/5942f3199a7af5f1028b482c?width=800&format=jpeg&auto=webp",
     "category": "Racing",
     "downloadLink": "https://example.com/neonracers",
     "description": "High-speed futuristic racing with customizable hover-cars.",
@@ -32,7 +32,7 @@
   {
     "id": "4",
     "title": "Space Odyssey",
-    "coverPhoto": "https://example.com/images/spaceodyssey.png",
+    "coverPhoto": "https://images.sftcdn.net/images/t_app-cover-s,f_auto/p/a6157a87-3f1e-46c4-be7e-04fe9234b2c1/1733896433/arcadium-space-odyssey-game-arcadium-space-odyssey-android.jpg",
     "category": "Adventure",
     "downloadLink": "https://example.com/spaceodyssey",
     "description": "Explore the galaxies and complete missions in this space adventure.",
@@ -52,7 +52,7 @@
   {
     "id": "6",
     "title": "Fantasy Quest",
-    "coverPhoto": "https://example.com/images/fantasyquest.png",
+    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpulgWiQOp8S0suXVDJem3qoIPcrBlYT_MTA&s",
     "category": "RPG",
     "downloadLink": "https://example.com/fantasyquest",
     "description": "Embark on epic quests in a magical fantasy world.",
@@ -72,7 +72,7 @@
   {
     "id": "8",
     "title": "Dragon Slayer",
-    "coverPhoto": "https://example.com/images/dragonslayer.png",
+    "coverPhoto": "https://static.download.it/scrs/aqf/com.glu.dragonslayer/screenshots/2CK0ErCueicrAZxurukisK114VTo_Awb5N9ZVxba05FS1eSOjEDBQCE7mdmN6Zw77Q=w720-h310.jpg",
     "category": "RPG",
     "downloadLink": "https://example.com/dragonslayer",
     "description": "Become a hero and slay dragons in mystical lands.",
@@ -122,7 +122,7 @@
   {
     "id": "13",
     "title": "Racing Rivals",
-    "coverPhoto": "https://example.com/images/racingrivals.png",
+    "coverPhoto": "https://cdn-www.bluestacks.com/bs-images/ip23USbCzdAS5LDlFDy06WQKvdfPnt0qYkON4CAJehIXup5WICylX7R84Py9BhEddGkK.png",
     "category": "Racing",
     "downloadLink": "https://example.com/racingrivals",
     "description": "Compete in high-speed races with rivals worldwide.",
@@ -132,7 +132,7 @@
   {
     "id": "14",
     "title": "Magic Academy",
-    "coverPhoto": "https://example.com/images/magicacademy.png",
+    "coverPhoto": "https://images.ctfassets.net/s5n2t79q9icq/5uSM9wV9SWCM14ouUW7BoR/6bd3c5df63f901e13ed4c094a6f4fa55/ab2scWUU5rI-HD.jpg",
     "category": "Simulation",
     "downloadLink": "https://example.com/magicacademy",
     "description": "Train to become a powerful wizard in a magical school.",
