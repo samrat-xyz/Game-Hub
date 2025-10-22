@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 function GameDetailsCard({ detail }) {
   return (
@@ -29,14 +30,14 @@ function GameDetailsCard({ detail }) {
         <p className="text-gray-700 mb-4">{detail.description}</p>
 
         <div className="card-actions justify-end">
-          <a
-            href={detail.downloadLink}
+          <Link
+            to={detail.downloadLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary"
+            className="btn"
           >
             Install
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -2,17 +2,22 @@ import React, { use, useState } from "react";
 import { Link } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../context/AuthContext";
+
 function Register() {
-  const { createUser, googleLogin } = use(AuthContext);
+  const { createUser, googleLogin, setUser, updateUserProfile } = use(AuthContext);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
+
   const handleRegister = (e) => {
     e.preventDefault();
     createUser(email, password)
       .then((res) => {
         alert("User Created Successfully");
+        updateUserProfile({ displayName: name, photoURL: photo });
+        setUser(res.user);
       })
       .catch((error) => {
         alert(error.message);
@@ -21,8 +26,8 @@ function Register() {
 
   const handleGoogleLogin = () => {
     googleLogin()
-      .then((result) => {
-        alert("google login success");
+      .then(() => {
+        alert("Google login success");
       })
       .catch((error) => {
         alert(error.message);
@@ -51,8 +56,8 @@ function Register() {
               required
             />
           </div>
-          {/* photo */}
 
+          {/* Photo */}
           <div className="form-control">
             <label className="label">
               <span className="label-text">Photo</span>
@@ -66,6 +71,7 @@ function Register() {
               required
             />
           </div>
+
           {/* Email */}
           <div className="form-control">
             <label className="label">
@@ -114,9 +120,9 @@ function Register() {
           <FcGoogle size={22} /> Login with Google
         </button>
 
-        {/* Register Link */}
+        {/* Login Link */}
         <p className="text-center mt-3">
-          Alredy have an account?{" "}
+          Already have an account?{" "}
           <Link to="/auth" className="text-blue-500 hover:underline">
             Login
           </Link>
