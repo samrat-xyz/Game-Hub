@@ -17,11 +17,11 @@ function PopularGames() {
     <section className="w-11/12 mx-auto my-10">
       <h2 className="text-3xl font-bold mb-6 text-center ">Popular Games</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
         {games.map((game) => (
           <div
             key={game.id}
-            className=" p-4 rounded-2xl shadow-lg h-[400px]"
+            className=" p-4 rounded-2xl shadow-lg h-[300px]"
           >
             <img
               src={game.coverPhoto}
@@ -35,13 +35,13 @@ function PopularGames() {
               <p className="text-sm ">{game.developer}</p>
             </div>
 
-            <Link
+            {/* <Link
               to={game.downloadLink}
               target="_blank"
               className="block mt-4 text-center bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-medium"
             >
               Install Now
-            </Link>
+            </Link> */}
           </div>
         ))}
       </div>

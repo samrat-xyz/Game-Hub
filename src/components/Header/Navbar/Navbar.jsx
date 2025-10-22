@@ -49,8 +49,10 @@ function Navbar() {
         <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg">{navLinks}</ul>
         </div>
-
-        <div className="flex-none">
+        <div>
+          <Link to='/auth' className="px-6 py-2  rounded border">Login</Link>
+        </div>
+        {/* <div className="flex-none">
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -81,7 +83,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
