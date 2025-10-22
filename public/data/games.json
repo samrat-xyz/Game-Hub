@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Player Unknowns Battle Ground: PUBG",
-    "coverPhoto": "https://cdn2.unrealengine.com/egs-pubgmobile-krafton-hero-1920x1080-1920x1080-f5995a332ec1.jpg",
+    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcv0B3wVwd0dPErTE3BIpfuGvjvN-nPM1bNw&s",
     "category": "FPS",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
@@ -22,7 +22,7 @@
   {
     "id": "3",
     "title": "Neon Racers",
-    "coverPhoto": "https://i.pinimg.com/originals/1c/9f/39/1c9f39653c9b1b4b5a4cf2f8d5e12b8e.jpg",
+    "coverPhoto": "https://books.disney.com/content/uploads/2014/06/9781484724538.jpg",
     "category": "Racing",
     "downloadLink": "https://store.steampowered.com/app/987654/Neon_Racers/",
     "description": "High-speed futuristic racing with customizable hover-cars.",
@@ -62,7 +62,7 @@
   {
     "id": "7",
     "title": "Cyberpunk Streets",
-    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1091501/header.jpg",
+    "coverPhoto": "https://as2.ftcdn.net/jpg/03/28/76/39/1000_F_328763975_TwTgTGjpa5I56YjLMArUt2ysIAJaPgsj.jpg",
     "category": "Action",
     "downloadLink": "https://store.steampowered.com/app/1091501/Cyberpunk_Streets/",
     "description": "Fight and survive in the neon-lit cyberpunk city.",
@@ -92,7 +92,7 @@
   {
     "id": "10",
     "title": "Street Basketball",
-    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/872431/header.jpg",
+    "coverPhoto": "https://store-images.s-microsoft.com/image/apps.36279.13666547680078850.2f6bc85d-e8ba-49ba-ba53-9517397f4103.e9699686-25c0-4fe7-84a8-94265b76506f?h=1280",
     "category": "Sports",
     "downloadLink": "https://store.steampowered.com/app/872431/Street_Basketball/",
     "description": "Play 3v3 street basketball in urban courts.",
@@ -102,7 +102,7 @@
   {
     "id": "11",
     "title": "Robo Wars",
-    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1020301/header.jpg",
+    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmE6l3t3nmdUgu1I-8BeCXzp-Y0TdRXZtrOw&s",
     "category": "Strategy",
     "downloadLink": "https://store.steampowered.com/app/1020301/Robo_Wars/",
     "description": "Build and battle robots in strategic arenas.",

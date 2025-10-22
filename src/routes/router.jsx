@@ -7,39 +7,59 @@ import Register from "../pages/Register/Register";
 import Games from "../pages/Games/Games";
 import GameDetails from "../pages/GameDetails/GameDetails";
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
+import Profile from "../pages/Profile/Profile";
+import EditProfile from "../pages/EditProfile/EditProfile";
+import ProfilePage from "../components/ProfilePage/ProfilePage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component:RootLayout,
-    children :[
+    Component: RootLayout,
+    children: [
       {
-        index :true,
-        Component:Home
+        index: true,
+        Component: Home,
       },
       {
-        path:'/games',
-        loader:()=>fetch('/data/games.json'),
-        Component:Games,
+        path: "/games",
+        loader: () => fetch("/data/games.json"),
+        Component: Games,
       },
       {
-        path:'/game-details/:id',
-        loader : () => fetch('/data/games.json'),
-        element :<PrivateRoute><GameDetails></GameDetails></PrivateRoute>
-      }
-    ]
+        path: "/game-details/:id",
+        loader: () => fetch("/data/games.json"),
+        element: (
+          <PrivateRoute>
+            <GameDetails></GameDetails>
+          </PrivateRoute>
+        ),
+      },
+    ],
   },
   {
-    path:'/auth',
-    Component : Auth,
-    children:[
+    path: "/auth",
+    Component: Auth,
+    children: [
       {
-        index : true,
-        Component:Login,
+        index: true,
+        Component: Login,
       },
       {
-        path:'/auth/register',
-        Component:Register
+        path: "/auth/register",
+        Component: Register,
+      },
+    ],
+  },{
+    path:'/Profile-page',
+    Component:ProfilePage,
+    children:[
+      {
+        index:true,
+        Component:Profile
+      },
+      {
+        path:'/Profile-page/edit-profile',
+        Component:EditProfile
       }
     ]
   }

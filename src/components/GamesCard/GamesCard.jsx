@@ -4,7 +4,7 @@ import { Link } from "react-router";
 function GamesCard({ game }) {
   return (
     <Link to={`/game-details/${game.id}`}>
-      <div className=" p-4 rounded-2xl shadow-lg h-[300px]">
+      <div className=" p-4 rounded-2xl shadow-lg h-[320px]">
         <img
           src={game.coverPhoto}
           alt={game.title}
