@@ -1,7 +1,7 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../../context/AuthContext";
-
+import logoImg from '../../../assets/logo.jpeg'
 function Navbar() {
   const { user, logoutUser } = use(AuthContext);
   const navLinks = (
@@ -40,7 +40,7 @@ function Navbar() {
         <div className="navbar w-11/12 mx-auto">
           <div className="flex-1">
             <Link to="/" className="normal-case text-3xl">
-              GameHub
+              <img src={logoImg} alt="" className="w-16 rounded-full"/>
             </Link>
           </div>
 
