@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 
 function Banner() {
   return (
-    <div className="my-5 w-11/12 mx-auto">
+    <div className="my-5 w-11/12 mx-auto ">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         autoplay={{
