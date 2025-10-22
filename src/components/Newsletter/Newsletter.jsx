@@ -18,7 +18,7 @@ function Newsletter() {
     <div className=" py-16 my-8 w-11/12 mx-auto rounded-lg shadow-xl">
       <div className="w-11/12 md:w-8/12 mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-3">
-          📧 Join Our GameHub Newsletter
+         Join Our GameHub Newsletter
         </h2>
 
         <p className=" mb-8">

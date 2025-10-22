@@ -19,8 +19,9 @@ function PopularGames() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
         {games.map((game) => (
-          <div
-            key={game.id}
+           <Link key={game.id} to={`/game-details/${game.id}`}>
+            <div
+            
             className=" p-4 rounded-2xl shadow-lg h-[300px]"
           >
             <img
@@ -35,14 +36,9 @@ function PopularGames() {
               <p className="text-sm ">{game.developer}</p>
             </div>
 
-            {/* <Link
-              to={game.downloadLink}
-              target="_blank"
-              className="block mt-4 text-center bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-medium"
-            >
-              Install Now
-            </Link> */}
+           
           </div>
+          </Link>
         ))}
       </div>
     </section>
@@ -50,3 +46,10 @@ function PopularGames() {
 }
 
 export default PopularGames;
+ {/* <Link
+              to={game.downloadLink}
+              target="_blank"
+              className="block mt-4 text-center bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-medium"
+            >
+              Install Now
+            </Link> */}

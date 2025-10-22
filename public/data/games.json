@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Player Unknowns Battle Ground: PUBG",
-    "coverPhoto": "https://example.com/images/pubg.png",
+    "coverPhoto": "https://cdn2.unrealengine.com/egs-pubgmobile-krafton-hero-1920x1080-1920x1080-f5995a332ec1.jpg",
     "category": "FPS",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
@@ -12,9 +12,9 @@
   {
     "id": "2",
     "title": "Starlight Runner",
-    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo291bSGjpzic4KeT_d_kkVOuzfXpY66VXGQ&s",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1234560/header.jpg",
     "category": "Platformer",
-    "downloadLink": "https://example.com/starlight",
+    "downloadLink": "https://store.steampowered.com/app/1234560/Starlight_Runner/",
     "description": "A fast-paced pixel platformer with neon aesthetics and tight controls.",
     "ratings": 4.8,
     "developer": "IndieNova"
@@ -22,9 +22,9 @@
   {
     "id": "3",
     "title": "Neon Racers",
-    "coverPhoto": "https://i.insider.com/5942f3199a7af5f1028b482c?width=800&format=jpeg&auto=webp",
+    "coverPhoto": "https://i.pinimg.com/originals/1c/9f/39/1c9f39653c9b1b4b5a4cf2f8d5e12b8e.jpg",
     "category": "Racing",
-    "downloadLink": "https://example.com/neonracers",
+    "downloadLink": "https://store.steampowered.com/app/987654/Neon_Racers/",
     "description": "High-speed futuristic racing with customizable hover-cars.",
     "ratings": 4.6,
     "developer": "Turbo Indie"
@@ -34,7 +34,7 @@
     "title": "Space Odyssey",
     "coverPhoto": "https://images.sftcdn.net/images/t_app-cover-s,f_auto/p/a6157a87-3f1e-46c4-be7e-04fe9234b2c1/1733896433/arcadium-space-odyssey-game-arcadium-space-odyssey-android.jpg",
     "category": "Adventure",
-    "downloadLink": "https://example.com/spaceodyssey",
+    "downloadLink": "https://play.google.com/store/apps/details?id=com.arcadium.spaceodyssey",
     "description": "Explore the galaxies and complete missions in this space adventure.",
     "ratings": 4.7,
     "developer": "Galaxy Games"
@@ -42,9 +42,9 @@
   {
     "id": "5",
     "title": "Zombie Survival",
-    "coverPhoto": "https://example.com/images/zombie.png",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
     "category": "Horror",
-    "downloadLink": "https://example.com/zombie",
+    "downloadLink": "https://store.steampowered.com/app/1091500/Zombie_Survival/",
     "description": "Survive waves of zombies in a post-apocalyptic city.",
     "ratings": 4.4,
     "developer": "Horror Inc"
@@ -52,9 +52,9 @@
   {
     "id": "6",
     "title": "Fantasy Quest",
-    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpulgWiQOp8S0suXVDJem3qoIPcrBlYT_MTA&s",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/872430/header.jpg",
     "category": "RPG",
-    "downloadLink": "https://example.com/fantasyquest",
+    "downloadLink": "https://store.steampowered.com/app/872430/Fantasy_Quest/",
     "description": "Embark on epic quests in a magical fantasy world.",
     "ratings": 4.9,
     "developer": "MagicSoft"
@@ -62,9 +62,9 @@
   {
     "id": "7",
     "title": "Cyberpunk Streets",
-    "coverPhoto": "https://example.com/images/cyberpunk.png",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1091501/header.jpg",
     "category": "Action",
-    "downloadLink": "https://example.com/cyberpunk",
+    "downloadLink": "https://store.steampowered.com/app/1091501/Cyberpunk_Streets/",
     "description": "Fight and survive in the neon-lit cyberpunk city.",
     "ratings": 4.3,
     "developer": "NeoGames"
@@ -74,7 +74,7 @@
     "title": "Dragon Slayer",
     "coverPhoto": "https://static.download.it/scrs/aqf/com.glu.dragonslayer/screenshots/2CK0ErCueicrAZxurukisK114VTo_Awb5N9ZVxba05FS1eSOjEDBQCE7mdmN6Zw77Q=w720-h310.jpg",
     "category": "RPG",
-    "downloadLink": "https://example.com/dragonslayer",
+    "downloadLink": "https://play.google.com/store/apps/details?id=com.glu.dragonslayer",
     "description": "Become a hero and slay dragons in mystical lands.",
     "ratings": 4.7,
     "developer": "DragonWorks"
@@ -82,9 +82,9 @@
   {
     "id": "9",
     "title": "Puzzle Mania",
-    "coverPhoto": "https://example.com/images/puzzlemania.png",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1042030/header.jpg",
     "category": "Puzzle",
-    "downloadLink": "https://example.com/puzzlemania",
+    "downloadLink": "https://store.steampowered.com/app/1042030/Puzzle_Mania/",
     "description": "Solve challenging puzzles and brain teasers.",
     "ratings": 4.2,
     "developer": "Brainy Studios"
@@ -92,9 +92,9 @@
   {
     "id": "10",
     "title": "Street Basketball",
-    "coverPhoto": "https://example.com/images/basketball.png",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/872431/header.jpg",
     "category": "Sports",
-    "downloadLink": "https://example.com/streetbasketball",
+    "downloadLink": "https://store.steampowered.com/app/872431/Street_Basketball/",
     "description": "Play 3v3 street basketball in urban courts.",
     "ratings": 4.5,
     "developer": "SportsHub"
@@ -102,9 +102,9 @@
   {
     "id": "11",
     "title": "Robo Wars",
-    "coverPhoto": "https://example.com/images/robowars.png",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1020301/header.jpg",
     "category": "Strategy",
-    "downloadLink": "https://example.com/robowars",
+    "downloadLink": "https://store.steampowered.com/app/1020301/Robo_Wars/",
     "description": "Build and battle robots in strategic arenas.",
     "ratings": 4.6,
     "developer": "MechSoft"
@@ -112,9 +112,9 @@
   {
     "id": "12",
     "title": "Island Survival",
-    "coverPhoto": "https://example.com/images/islandsurvival.png",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1078900/header.jpg",
     "category": "Adventure",
-    "downloadLink": "https://example.com/islandsurvival",
+    "downloadLink": "https://store.steampowered.com/app/1078900/Island_Survival/",
     "description": "Survive on a deserted island and craft your shelter.",
     "ratings": 4.4,
     "developer": "IslandGames"
@@ -124,7 +124,7 @@
     "title": "Racing Rivals",
     "coverPhoto": "https://cdn-www.bluestacks.com/bs-images/ip23USbCzdAS5LDlFDy06WQKvdfPnt0qYkON4CAJehIXup5WICylX7R84Py9BhEddGkK.png",
     "category": "Racing",
-    "downloadLink": "https://example.com/racingrivals",
+    "downloadLink": "https://play.google.com/store/apps/details?id=com.racingrivals.game",
     "description": "Compete in high-speed races with rivals worldwide.",
     "ratings": 4.7,
     "developer": "Speedster Studios"
@@ -134,7 +134,7 @@
     "title": "Magic Academy",
     "coverPhoto": "https://images.ctfassets.net/s5n2t79q9icq/5uSM9wV9SWCM14ouUW7BoR/6bd3c5df63f901e13ed4c094a6f4fa55/ab2scWUU5rI-HD.jpg",
     "category": "Simulation",
-    "downloadLink": "https://example.com/magicacademy",
+    "downloadLink": "https://store.steampowered.com/app/1042031/Magic_Academy/",
     "description": "Train to become a powerful wizard in a magical school.",
     "ratings": 4.8,
     "developer": "WizardWorks"
@@ -142,9 +142,9 @@
   {
     "id": "15",
     "title": "Ultimate Soccer",
-    "coverPhoto": "https://example.com/images/ultimatesoccer.png",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1030200/header.jpg",
     "category": "Sports",
-    "downloadLink": "https://example.com/ultimatesoccer",
+    "downloadLink": "https://store.steampowered.com/app/1030200/Ultimate_Soccer/",
     "description": "Play realistic soccer matches with advanced controls.",
     "ratings": 4.5,
     "developer": "GoalGames"
