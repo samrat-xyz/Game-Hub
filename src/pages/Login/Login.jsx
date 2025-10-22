@@ -1,26 +1,40 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Link } from "react-router";
 import { FcGoogle } from "react-icons/fc"; // <-- Import Google Icon
+import { AuthContext } from "../../context/AuthContext";
 
 function Login() {
+  const { loginUser,googleLogin } = use(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
-    alert("Login Successful!");
+    loginUser(email, password)
+      .then((result) => {
+        alert("login successfully");
+      })
+      .catch((error) => {
+        alert(error.code);
+      });
   };
-
+  
   const handleGoogleLogin = () => {
-    alert("Google Login Clicked!");
+    googleLogin()
+    .then((result)=>{
+      alert("google login success")
+    })
+    .catch((error)=>{
+      alert(error.message)
+    })
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-base-200">
       <div className="card w-96 bg-base-100 shadow-xl p-6">
-        <h2 className="text-2xl font-bold text-center mb-4">Login to Your Account</h2>
+        <h2 className="text-2xl font-bold text-center mb-4">
+          Login to Your Account
+        </h2>
 
         <form onSubmit={handleLogin} className="space-y-4">
           {/* Email */}
@@ -54,7 +68,10 @@ function Login() {
           </div>
 
           {/* Submit Button */}
-          <button type="submit" className="btn border border-gray-400 bg-blue-700 w-full">
+          <button
+            type="submit"
+            className="btn border border-gray-400 bg-blue-700 w-full"
+          >
             Login
           </button>
         </form>

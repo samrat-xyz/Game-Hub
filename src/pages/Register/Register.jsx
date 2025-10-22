@@ -1,29 +1,43 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Link } from "react-router";
-import { FcGoogle } from "react-icons/fc"; // <-- Import Google Icon
-
+import { FcGoogle } from "react-icons/fc";
+import { AuthContext } from "../../context/AuthContext";
 function Register() {
+  const { createUser, googleLogin } = use(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const handleLogin = (e) => {
+  const [name, setName] = useState("");
+  const [photo, setPhoto] = useState("");
+  const handleRegister = (e) => {
     e.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
-    alert("Login Successful!");
+    createUser(email, password)
+      .then((res) => {
+        alert("User Created Successfully");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
   const handleGoogleLogin = () => {
-    alert("Google Login Clicked!");
+    googleLogin()
+      .then((result) => {
+        alert("google login success");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-base-200">
       <div className="card w-96 bg-base-100 shadow-xl p-6">
-        <h2 className="text-2xl font-bold text-center mb-4">Register Your Account</h2>
+        <h2 className="text-2xl font-bold text-center mb-4">
+          Register Your Account
+        </h2>
 
-        <form onSubmit={handleLogin} className="space-y-4">
-        {/* Name */}
+        <form onSubmit={handleRegister} className="space-y-4">
+          {/* Name */}
           <div className="form-control">
             <label className="label">
               <span className="label-text">Name</span>
@@ -32,13 +46,13 @@ function Register() {
               type="text"
               placeholder="Write your name"
               className="input input-bordered w-full"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               required
             />
           </div>
-            {/* photo */}
-           
+          {/* photo */}
+
           <div className="form-control">
             <label className="label">
               <span className="label-text">Photo</span>
@@ -47,8 +61,8 @@ function Register() {
               type="text"
               placeholder="Write your photoURL"
               className="input input-bordered w-full"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={photo}
+              onChange={(e) => setPhoto(e.target.value)}
               required
             />
           </div>
@@ -83,7 +97,10 @@ function Register() {
           </div>
 
           {/* Submit Button */}
-          <button type="submit" className="btn border border-gray-400 bg-blue-700 w-full">
+          <button
+            type="submit"
+            className="btn border border-gray-400 bg-blue-700 w-full"
+          >
             Register
           </button>
         </form>
