@@ -1,5 +1,5 @@
 import React, { use, useState } from "react";
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc"; // <-- Import Google Icon
 import { AuthContext } from "../../context/AuthContext";
 
@@ -7,7 +7,8 @@ function Login() {
   const { loginUser,googleLogin } = use(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     loginUser(email, password)
@@ -22,7 +23,8 @@ function Login() {
   const handleGoogleLogin = () => {
     googleLogin()
     .then((result)=>{
-      alert("google login success")
+      alert("google login success");
+      navigate(`${location.state ? location.state : "/"}`);
     })
     .catch((error)=>{
       alert(error.message)
