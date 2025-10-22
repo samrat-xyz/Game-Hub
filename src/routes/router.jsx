@@ -59,7 +59,7 @@ export const router = createBrowserRouter([
       },
       {
         path:'/Profile-page/edit-profile',
-        Component:EditProfile
+       element:<PrivateRoute><EditProfile/></PrivateRoute>
       }
     ]
   }
