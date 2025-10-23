@@ -49,18 +49,23 @@ export const router = createBrowserRouter([
         Component: Register,
       },
     ],
-  },{
-    path:'/Profile-page',
-    Component:ProfilePage,
-    children:[
+  },
+  {
+    path: "/profile-page",
+    Component: ProfilePage,
+    children: [
       {
-        index:true,
-        Component:Profile
+        index: true,
+        Component: Profile,
       },
       {
-        path:'/Profile-page/edit-profile',
-       element:<PrivateRoute><EditProfile/></PrivateRoute>
-      }
-    ]
-  }
+        path: "/profile-page/edit-profile",
+        element: (
+          <PrivateRoute>
+            <EditProfile />
+          </PrivateRoute>
+        ),
+      },
+    ],
+  },
 ]);

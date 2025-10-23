@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../../components/Header/Navbar/Navbar'
-import { Outlet } from 'react-router'
+import React from "react";
+import Navbar from "../../components/Header/Navbar/Navbar";
+import { Outlet } from "react-router";
 
 function Auth() {
   return (
@@ -12,7 +12,7 @@ function Auth() {
         <Outlet></Outlet>
       </main>
     </div>
-  )
+  );
 }
 
-export default Auth
+export default Auth;

@@ -69,9 +69,7 @@ function Navbar() {
                       Profile <span className="badge">New</span>
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/settings">Settings</Link>
-                  </li>
+                  
                   <li>
                     <button onClick={logoutHandler}>Logout</button>
                   </li>

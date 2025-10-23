@@ -8,7 +8,7 @@ function Profile() {
 
   return (
     <div className="w-11/12 mx-auto h-screen flex items-center justify-center  ">
-      <div className="p-10 rounded-2xl shadow-xl text-center bg-white max-w-sm w-full border border-gray-200">
+      <div className="p-10 rounded-2xl shadow-xl text-center max-w-sm w-full border border-gray-200">
         <div className="mb-5">
           <img
             src={user?.photoURL}
@@ -26,11 +26,13 @@ function Profile() {
 
         <div className="mt-6">
           <Link
-            to="/Profile-page/edit-profile"
+            to="/profile-page/edit-profile"
             className="px-5 py-2 rounded-full bg-primary border font-medium hover:bg-primary/80 transition-all duration-200"
           >
             Edit Profile
           </Link>
+        </div>
+        <div className="my-6">
         </div>
       </div>
     </div>
