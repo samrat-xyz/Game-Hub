@@ -6,7 +6,7 @@ function GameDetails() {
     const details = useLoaderData();
     const {id} = useParams()
     const filterdetails = details.filter(d => d.id == id);
-    // console.log(filterdetails)
+    
   return (
     <div>
       {

@@ -1,21 +1,37 @@
 import React from "react";
 import { Link } from "react-router";
 import { FaStar } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function GameDetailsCard({ detail }) {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-md w-11/12 mx-auto my-12">
-      {/* Cover Image */}
-      <figure className="lg:w-1/3">
+    <motion.div
+      className="card lg:card-side bg-base-100 shadow-md w-11/12 mx-auto my-12"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+     
+      <motion.figure
+        className="lg:w-1/3"
+        initial={{ x: -50, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
         <img
           src={detail.coverPhoto}
           alt={detail.title}
           className="object-cover h-full w-full"
         />
-      </figure>
+      </motion.figure>
 
-      {/* Card Body */}
-      <div className="card-body lg:w-2/3">
+     
+      <motion.div
+        className="card-body lg:w-2/3"
+        initial={{ x: 50, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         <h2 className="card-title text-2xl">{detail.title}</h2>
 
         <p className="text-gray-600 mb-1">
@@ -26,12 +42,18 @@ function GameDetailsCard({ detail }) {
         </p>
         <p className="text-yellow-500 font-semibold mb-2 flex items-center gap-2">
           <FaStar />
- {detail.ratings} / 5
+          {detail.ratings} / 5
         </p>
 
         <p className="text-gray-700 mb-4">{detail.description}</p>
 
-        <div className="card-actions justify-end">
+        {/* Install Button */}
+        <motion.div
+          className="card-actions justify-end"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <Link
             to={detail.downloadLink}
             target="_blank"
@@ -40,9 +62,9 @@ function GameDetailsCard({ detail }) {
           >
             Install
           </Link>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }
 

@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../context/AuthContext";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 function Register() {
   const { createUser, googleLogin, setUser, updateUserProfile } = use(AuthContext);
@@ -11,7 +12,7 @@ function Register() {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
-  const [error, setError] = useState(""); // <-- Error State
+  const [error, setError] = useState(""); 
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
@@ -30,7 +31,6 @@ function Register() {
       setError("Password must contain at least one lowercase letter");
       return;
     }
-
 
     createUser(email, password)
       .then((res) => {
@@ -58,15 +58,29 @@ function Register() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-base-200 px-4">
-      <div className="card w-96 bg-base-100 shadow-xl p-6">
+    <motion.div
+      className="flex items-center justify-center min-h-screen bg-base-200 px-4"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <motion.div
+        className="card w-96 bg-base-100 shadow-xl p-6"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
         <h2 className="text-2xl font-bold text-center mb-4">
           Register Your Account
         </h2>
 
         <form onSubmit={handleRegister} className="space-y-4">
-         
-          <div className="form-control">
+          <motion.div
+            className="form-control"
+            initial={{ x: -30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <label className="label">
               <span className="label-text">Name</span>
             </label>
@@ -78,10 +92,14 @@ function Register() {
               onChange={(e) => setName(e.target.value)}
               required
             />
-          </div>
+          </motion.div>
 
-          
-          <div className="form-control">
+          <motion.div
+            className="form-control"
+            initial={{ x: 30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <label className="label">
               <span className="label-text">Photo</span>
             </label>
@@ -93,10 +111,14 @@ function Register() {
               onChange={(e) => setPhoto(e.target.value)}
               required
             />
-          </div>
+          </motion.div>
 
-          
-          <div className="form-control">
+          <motion.div
+            className="form-control"
+            initial={{ x: -30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <label className="label">
               <span className="label-text">Email</span>
             </label>
@@ -108,10 +130,14 @@ function Register() {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-          </div>
+          </motion.div>
 
-         
-          <div className="form-control">
+          <motion.div
+            className="form-control"
+            initial={{ x: 30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <label className="label">
               <span className="label-text">Password</span>
             </label>
@@ -123,36 +149,66 @@ function Register() {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-          </div>
+          </motion.div>
 
           {error && (
-            <p className="text-red-500 text-sm font-medium mt-1">{error}</p>
+            <motion.p
+              className="text-red-500 text-sm font-medium mt-1"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              {error}
+            </motion.p>
           )}
 
-          <button
+          <motion.button
             type="submit"
             className="btn border border-gray-400 bg-blue-700 w-full text-white"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
           >
             Register
-          </button>
+          </motion.button>
         </form>
 
-        <div className="divider">OR</div>
-        <button
+        <motion.div
+          className="divider"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          OR
+        </motion.div>
+
+        <motion.button
           onClick={handleGoogleLogin}
           className="btn border border-gray-400 w-full flex items-center justify-center gap-2"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
           <FcGoogle size={22} /> Login with Google
-        </button>
+        </motion.button>
 
-        <p className="text-center mt-3">
+        <motion.p
+          className="text-center mt-3"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           Already have an account?{" "}
           <Link to="/auth" className="text-blue-500 hover:underline">
             Login
           </Link>
-        </p>
-      </div>
-    </div>
+        </motion.p>
+      </motion.div>
+    </motion.div>
   );
 }
 
