@@ -22,7 +22,7 @@ function Login() {
         navigate(location.state ? location.state : "/");
       })
       .catch((error) => {
-        console.log(error.code);
+        // console.log(error.code);
         if (error.code === "auth/invalid-email") {
           setError("Invalid email format.");
         } else if (error.code === "auth/user-not-found") {
