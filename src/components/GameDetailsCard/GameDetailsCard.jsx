@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import { FaStar } from "react-icons/fa";
 
 function GameDetailsCard({ detail }) {
   return (
@@ -23,8 +24,9 @@ function GameDetailsCard({ detail }) {
         <p className="text-gray-600 mb-1">
           <span className="font-semibold">Developer:</span> {detail.developer}
         </p>
-        <p className="text-yellow-500 font-semibold mb-2">
-          ⭐ {detail.ratings} / 5
+        <p className="text-yellow-500 font-semibold mb-2 flex items-center gap-2">
+          <FaStar />
+ {detail.ratings} / 5
         </p>
 
         <p className="text-gray-700 mb-4">{detail.description}</p>

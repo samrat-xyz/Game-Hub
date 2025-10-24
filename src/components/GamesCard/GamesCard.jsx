@@ -1,4 +1,5 @@
 import React from "react";
+import { FaStar } from "react-icons/fa";
 import { Link } from "react-router";
 
 function GamesCard({ game }) {
@@ -13,7 +14,10 @@ function GamesCard({ game }) {
         <h3 className="text-xl font-semibold">{game.title}</h3>
 
         <div className="flex justify-between items-center mt-3">
-          <p className="text-yellow-400 font-bold">⭐ {game.ratings}</p>
+          <p className="text-yellow-400 font-bold flex items-center gap-3">
+            <FaStar />
+            {game.ratings}
+          </p>
           <p className="text-sm ">{game.developer}</p>
         </div>
       </div>

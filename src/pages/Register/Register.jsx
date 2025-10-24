@@ -1,7 +1,8 @@
 import React, { use, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../context/AuthContext";
+import { toast } from "react-toastify";
 
 function Register() {
   const { createUser, googleLogin, setUser, updateUserProfile } = use(AuthContext);
@@ -10,39 +11,61 @@ function Register() {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
+  const [error, setError] = useState(""); // <-- Error State
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
+    setError(""); 
+
+    if (password.length < 6) {
+      setError("Password must be at least 6 characters long");
+      return;
+    }
+    if (!/[A-Z]/.test(password)) {
+      setError("Password must contain at least one uppercase letter");
+      return;
+    }
+    if (!/[a-z]/.test(password)) {
+      setError("Password must contain at least one lowercase letter");
+      return;
+    }
+
+
     createUser(email, password)
       .then((res) => {
-        alert("User Created Successfully");
+        toast.success("User Created Successfully");
         updateUserProfile({ displayName: name, photoURL: photo });
         setUser(res.user);
+        navigate("/");
       })
       .catch((error) => {
-        alert(error.message);
+        setError(error.message);
+        toast.error(error.message);
       });
   };
 
   const handleGoogleLogin = () => {
     googleLogin()
       .then(() => {
-        alert("Google login success");
+        toast.success("Google login success");
+        navigate("/");
       })
       .catch((error) => {
-        alert(error.message);
+        setError(error.message);
+        toast.error(error.message);
       });
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-base-200">
+    <div className="flex items-center justify-center min-h-screen bg-base-200 px-4">
       <div className="card w-96 bg-base-100 shadow-xl p-6">
         <h2 className="text-2xl font-bold text-center mb-4">
           Register Your Account
         </h2>
 
         <form onSubmit={handleRegister} className="space-y-4">
-          {/* Name */}
+         
           <div className="form-control">
             <label className="label">
               <span className="label-text">Name</span>
@@ -57,7 +80,7 @@ function Register() {
             />
           </div>
 
-          {/* Photo */}
+          
           <div className="form-control">
             <label className="label">
               <span className="label-text">Photo</span>
@@ -72,7 +95,7 @@ function Register() {
             />
           </div>
 
-          {/* Email */}
+          
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
@@ -87,7 +110,7 @@ function Register() {
             />
           </div>
 
-          {/* Password */}
+         
           <div className="form-control">
             <label className="label">
               <span className="label-text">Password</span>
@@ -102,16 +125,18 @@ function Register() {
             />
           </div>
 
-          {/* Submit Button */}
+          {error && (
+            <p className="text-red-500 text-sm font-medium mt-1">{error}</p>
+          )}
+
           <button
             type="submit"
-            className="btn border border-gray-400 bg-blue-700 w-full"
+            className="btn border border-gray-400 bg-blue-700 w-full text-white"
           >
             Register
           </button>
         </form>
 
-        {/* Google Login */}
         <div className="divider">OR</div>
         <button
           onClick={handleGoogleLogin}
@@ -120,7 +145,6 @@ function Register() {
           <FcGoogle size={22} /> Login with Google
         </button>
 
-        {/* Login Link */}
         <p className="text-center mt-3">
           Already have an account?{" "}
           <Link to="/auth" className="text-blue-500 hover:underline">

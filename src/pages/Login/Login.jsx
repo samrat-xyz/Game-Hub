@@ -1,38 +1,54 @@
 import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
-import { FcGoogle } from "react-icons/fc"; // <-- Import Google Icon
+import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../context/AuthContext";
+import { toast } from "react-toastify";
 
 function Login() {
-  const { loginUser,googleLogin } = use(AuthContext);
+  const { loginUser, googleLogin } = use(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(""); 
+
   const location = useLocation();
   const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
+    setError(""); 
     loginUser(email, password)
-      .then((result) => {
-        alert("login successfully");
+      .then(() => {
+        toast.success("Login successful");
+        navigate(location.state ? location.state : "/");
       })
       .catch((error) => {
-        alert(error.code);
+        console.log(error.code);
+        if (error.code === "auth/invalid-email") {
+          setError("Invalid email format.");
+        } else if (error.code === "auth/user-not-found") {
+          setError("No user found with this email.");
+        } else if (error.code === "auth/wrong-password") {
+          setError("Incorrect password. Please try again.");
+        } else {
+          setError("Login failed. Please check your credentials.");
+        }
+
       });
   };
-  
+
   const handleGoogleLogin = () => {
     googleLogin()
-    .then((result)=>{
-      alert("google login success");
-      navigate(`${location.state ? location.state : "/"}`);
-    })
-    .catch((error)=>{
-      alert(error.message)
-    })
+      .then(() => {
+        toast.success("Google login success");
+        navigate(location.state ? location.state : "/");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-base-200">
+    <div className="flex items-center justify-center min-h-screen bg-base-200 px-4">
       <div className="card w-96 bg-base-100 shadow-xl p-6">
         <h2 className="text-2xl font-bold text-center mb-4">
           Login to Your Account
@@ -54,9 +70,8 @@ function Login() {
             />
           </div>
 
-          {/* Password */}
           <div className="form-control">
-            <label className="label">
+            <label className="label flex justify-between">
               <span className="label-text">Password</span>
             </label>
             <input
@@ -67,19 +82,29 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
+            <Link
+              to="/auth/forget-password"
+              state={{ email }} 
+              className="text-sm text-blue-600 hover:underline mt-2"
+            >
+              Forgot password?
+            </Link>
+
+            {error && (
+              <p className="text-red-500 text-sm mt-2 text-left">{error}</p>
+            )}
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
-            className="btn border border-gray-400 bg-blue-700 w-full"
+            className="btn border border-gray-400 bg-blue-700 w-full text-white"
           >
             Login
           </button>
         </form>
 
-        {/* Google Login */}
         <div className="divider">OR</div>
+
         <button
           onClick={handleGoogleLogin}
           className="btn border border-gray-400 w-full flex items-center justify-center gap-2"
@@ -87,7 +112,6 @@ function Login() {
           <FcGoogle size={22} /> Login with Google
         </button>
 
-        {/* Register Link */}
         <p className="text-center mt-3">
           Don't have an account?{" "}
           <Link to="/auth/register" className="text-blue-500 hover:underline">

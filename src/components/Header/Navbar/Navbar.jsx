@@ -1,9 +1,12 @@
-import React, { use } from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../../context/AuthContext";
-import logoImg from '../../../assets/logo.jpeg'
+import logoImg from "../../../assets/logo.jpeg";
+import { FaSpinner } from "react-icons/fa";
+
 function Navbar() {
-  const { user, logoutUser } = use(AuthContext);
+  const { user, logoutUser, loading } = useContext(AuthContext);
+
   const navLinks = (
     <>
       <li>
@@ -28,64 +31,68 @@ function Navbar() {
       </li>
     </>
   );
+
   const logoutHandler = () => {
-    logoutUser().then(() => {
-      alert("user logout");
-    });
+    logoutUser();
   };
 
   return (
-    <>
-      <div className="bg-base-100 shadow-sm">
-        <div className="navbar w-11/12 mx-auto">
-          <div className="flex-1">
-            <Link to="/" className="normal-case text-3xl">
-              <img src={logoImg} alt="" className="w-16 rounded-full"/>
+    <div className="bg-base-100 shadow-sm">
+      <div className="navbar w-11/12 mx-auto">
+        {/* Logo */}
+        <div className="flex-1">
+          <Link to="/" className="normal-case text-3xl">
+            <img src={logoImg} alt="logo" className="w-16 rounded-full" />
+          </Link>
+        </div>
+
+        <div className="hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 text-lg">{navLinks}</ul>
+        </div>
+        {loading ? (
+
+          <div className="flex items-center justify-center">
+            <FaSpinner className="animate-spin text-2xl text-blue-500" />
+          </div>
+        ) : user ? (
+          <div className="flex-none">
+            <div className="dropdown dropdown-end">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost btn-circle avatar"
+              >
+                <div className="w-10 rounded-full">
+                  <img alt="User Avatar" src={user?.photoURL} />
+                </div>
+              </div>
+              <ul
+                tabIndex={-1}
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <Link to="/Profile-page" className="justify-between">
+                    Profile <span className="badge">New</span>
+                  </Link>
+                </li>
+                <li>
+                  <button onClick={logoutHandler}>Logout</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          <div>
+            <Link
+              to="/auth"
+              className="px-6 py-2 rounded bg-blue-500 text-white font-bold hover:bg-blue-600 duration-200"
+            >
+              Login
             </Link>
           </div>
-
-          <div className="hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 text-lg">{navLinks}</ul>
-          </div>
-
-          {user ? (
-            <div className="flex-none">
-              <div className="dropdown dropdown-end">
-                <div
-                  tabIndex={0}
-                  role="button"
-                  className="btn btn-ghost btn-circle avatar"
-                >
-                  <div className="w-10 rounded-full">
-                    <img alt="User Avatar" src={user?.photoURL} />
-                  </div>
-                </div>
-                <ul
-                  tabIndex={-1}
-                  className="menu menu-sm dropdown-content bg-base-100 rounded-box  mt-3 w-52 p-2 shadow"
-                >
-                  <li>
-                    <Link to="/Profile-page" className="justify-between">
-                      Profile <span className="badge">New</span>
-                    </Link>
-                  </li>
-                  
-                  <li>
-                    <button onClick={logoutHandler}>Logout</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          ) : (
-            <div>
-              <Link to="/auth" className="px-6 py-2  rounded border">
-                Login
-              </Link>
-            </div>
-          )}
-        </div>
+        )}
       </div>
-    </>
+    </div>
   );
 }
 

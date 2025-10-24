@@ -1,11 +1,13 @@
 import React, { use, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router";
 
 function EditProfile() {
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
-  const [email, setEmail] = useState("");
-
+  
+  const navigate = useNavigate()
   const { updateUserProfile } = use(AuthContext);
 
   const handleUpdate = (e) => {
@@ -13,18 +15,19 @@ function EditProfile() {
     updateUserProfile({
       displayName: name,
       photoURL: photo,
-      email: email,
+      
     })
       .then(() => {
-        alert("Profile Updated Successfully!");
+        toast.success("Profile Updated Successfully!");
+        navigate('/profile-page')
       })
       .catch((error) => {
-        alert(error.message);
+        toast.error(error.message);
       });
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-base-200">
+    <div className="flex items-center justify-center min-h-screen bg-base-200 px-4">
       <div className="card w-96 bg-base-100 shadow-xl p-6">
         <h2 className="text-2xl font-bold text-center mb-4">
           Edit Your Profile
@@ -61,7 +64,7 @@ function EditProfile() {
             />
           </div>
 
-          <button type="submit" className="btn w-full border border-gray-400">
+          <button type="submit" className="btn w-full border border-gray-400 bg-blue-600 text-white">
             Save
           </button>
         </form>

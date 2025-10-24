@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
+import { FaStar } from "react-icons/fa";
 
 function PopularGames() {
   const [games, setGames] = useState([]);
@@ -19,25 +20,23 @@ function PopularGames() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
         {games.map((game) => (
-           <Link key={game.id} to={`/game-details/${game.id}`}>
-            <div
-            
-            className=" p-4 rounded-2xl shadow-lg h-[300px]"
-          >
-            <img
-              src={game.coverPhoto}
-              alt={game.title}
-              className="w-full h-48 object-cover rounded-xl mb-3 "
-            />
-            <h3 className="text-xl font-semibold">{game.title}</h3>
+          <Link key={game.id} to={`/game-details/${game.id}`}>
+            <div className=" p-4 rounded-2xl shadow-lg h-[300px]">
+              <img
+                src={game.coverPhoto}
+                alt={game.title}
+                className="w-full h-48 object-cover rounded-xl mb-3 "
+              />
+              <h3 className="text-xl font-semibold">{game.title}</h3>
 
-            <div className="flex justify-between items-center mt-3">
-              <p className="text-yellow-400 font-bold">⭐ {game.ratings}</p>
-              <p className="text-sm ">{game.developer}</p>
+              <div className="flex justify-between items-center mt-3">
+                <p className="text-yellow-400 font-bold flex items-center gap-3">
+                  <FaStar />
+                  {game.ratings}
+                </p>
+                <p className="text-sm ">{game.developer}</p>
+              </div>
             </div>
-
-           
-          </div>
           </Link>
         ))}
       </div>
@@ -46,10 +45,3 @@ function PopularGames() {
 }
 
 export default PopularGames;
- {/* <Link
-              to={game.downloadLink}
-              target="_blank"
-              className="block mt-4 text-center bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-medium"
-            >
-              Install Now
-            </Link> */}

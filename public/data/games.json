@@ -5,7 +5,7 @@
     "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcv0B3wVwd0dPErTE3BIpfuGvjvN-nPM1bNw&s",
     "category": "FPS",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
-    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "description": "PUBG Mobile drops you onto a massive battleground where up to 100 players compete for survival. Scavenge weapons, gear, and vehicles while strategizing your path to the final circle. With intense gunfights, dynamic weather, and realistic physics, every match feels unique. Whether you play solo or with friends, victory belongs only to the last survivor standing.",
     "ratings": 4.5,
     "developer": "Krafton"
   },
@@ -15,7 +15,7 @@
     "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1234560/header.jpg",
     "category": "Platformer",
     "downloadLink": "https://store.steampowered.com/app/1234560/Starlight_Runner/",
-    "description": "A fast-paced pixel platformer with neon aesthetics and tight controls.",
+    "description": "Starlight Runner is a lightning-fast pixel platformer set in a vibrant neon world. You’ll leap across moving platforms, dodge laser traps, and master fluid parkour mechanics. Each level brings tighter controls and mesmerizing visuals that reward precision and timing. The energetic synth soundtrack will keep your adrenaline high as you chase the perfect speedrun.",
     "ratings": 4.8,
     "developer": "IndieNova"
   },
@@ -25,7 +25,7 @@
     "coverPhoto": "https://books.disney.com/content/uploads/2014/06/9781484724538.jpg",
     "category": "Racing",
     "downloadLink": "https://store.steampowered.com/app/987654/Neon_Racers/",
-    "description": "High-speed futuristic racing with customizable hover-cars.",
+    "description": "Neon Racers brings futuristic high-speed racing to life with glowing tracks and customizable hover-cars. Compete against AI or real players across neon-lit cities and gravity-defying circuits. Upgrade your vehicle’s speed, boost, and handling to dominate every turn. Feel the thrill of racing in a cyber world where precision and reflexes mean everything.",
     "ratings": 4.6,
     "developer": "Turbo Indie"
   },
@@ -34,8 +34,8 @@
     "title": "Space Odyssey",
     "coverPhoto": "https://images.sftcdn.net/images/t_app-cover-s,f_auto/p/a6157a87-3f1e-46c4-be7e-04fe9234b2c1/1733896433/arcadium-space-odyssey-game-arcadium-space-odyssey-android.jpg",
     "category": "Adventure",
-    "downloadLink": "https://play.google.com/store/apps/details?id=com.arcadium.spaceodyssey",
-    "description": "Explore the galaxies and complete missions in this space adventure.",
+    "downloadLink": "https://store.steampowered.com/app/2435980/Space_Odyssey/",
+    "description": "Embark on a thrilling journey through galaxies in Space Odyssey. Pilot your spaceship through asteroid fields, alien territories, and cosmic anomalies. Uncover ancient mysteries, trade with alien civilizations, and defend against hostile forces. The game’s immersive visuals and captivating missions make every exploration a breathtaking experience beyond the stars.",
     "ratings": 4.7,
     "developer": "Galaxy Games"
   },
@@ -45,7 +45,7 @@
     "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
     "category": "Horror",
     "downloadLink": "https://store.steampowered.com/app/1091500/Zombie_Survival/",
-    "description": "Survive waves of zombies in a post-apocalyptic city.",
+    "description": "Zombie Survival throws you into a world overrun by the undead, where every bullet and breath counts. Build barricades, scavenge supplies, and craft weapons to fend off hordes of zombies. The eerie sound design and chilling atmosphere will keep you on edge as you struggle to stay alive. Can you survive the night, or will you become one of them?",
     "ratings": 4.4,
     "developer": "Horror Inc"
   },
@@ -55,7 +55,7 @@
     "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/872430/header.jpg",
     "category": "RPG",
     "downloadLink": "https://store.steampowered.com/app/872430/Fantasy_Quest/",
-    "description": "Embark on epic quests in a magical fantasy world.",
+    "description": "Enter a world of magic and mystery in Fantasy Quest. Forge alliances, battle mythical creatures, and uncover the secrets of a forgotten kingdom. Customize your hero’s abilities and choose your destiny through branching storylines. With stunning landscapes and an epic soundtrack, this RPG delivers a truly immersive fantasy adventure.",
     "ratings": 4.9,
     "developer": "MagicSoft"
   },
@@ -65,7 +65,7 @@
     "coverPhoto": "https://as2.ftcdn.net/jpg/03/28/76/39/1000_F_328763975_TwTgTGjpa5I56YjLMArUt2ysIAJaPgsj.jpg",
     "category": "Action",
     "downloadLink": "https://store.steampowered.com/app/1091501/Cyberpunk_Streets/",
-    "description": "Fight and survive in the neon-lit cyberpunk city.",
+    "description": "Step into the underworld of a neon-lit metropolis in Cyberpunk Streets. Take on gangs, hackers, and corrupt corporations as a lone mercenary for hire. Customize your weapons, cybernetic implants, and fighting style to suit your missions. The city is alive, dangerous, and full of secrets waiting to be uncovered in this gritty action experience.",
     "ratings": 4.3,
     "developer": "NeoGames"
   },
@@ -75,7 +75,7 @@
     "coverPhoto": "https://static.download.it/scrs/aqf/com.glu.dragonslayer/screenshots/2CK0ErCueicrAZxurukisK114VTo_Awb5N9ZVxba05FS1eSOjEDBQCE7mdmN6Zw77Q=w720-h310.jpg",
     "category": "RPG",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.glu.dragonslayer",
-    "description": "Become a hero and slay dragons in mystical lands.",
+    "description": "Become the ultimate warrior in Dragon Slayer, a fantasy RPG filled with danger and glory. Hunt massive dragons, forge legendary weapons, and unlock ancient powers. Every battle tests your courage and skill as you protect the kingdom from destruction. The breathtaking environments and epic boss fights make this a must-play for RPG fans.",
     "ratings": 4.7,
     "developer": "DragonWorks"
   },
@@ -85,7 +85,7 @@
     "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1042030/header.jpg",
     "category": "Puzzle",
     "downloadLink": "https://store.steampowered.com/app/1042030/Puzzle_Mania/",
-    "description": "Solve challenging puzzles and brain teasers.",
+    "description": "Puzzle Mania challenges your brain with hundreds of creative puzzles and logic challenges. Each level introduces new mechanics that push your problem-solving skills to the limit. The clean design and relaxing music make it perfect for both casual and hardcore puzzle fans. Sharpen your mind and see how far your logic can take you.",
     "ratings": 4.2,
     "developer": "Brainy Studios"
   },
@@ -95,7 +95,7 @@
     "coverPhoto": "https://store-images.s-microsoft.com/image/apps.36279.13666547680078850.2f6bc85d-e8ba-49ba-ba53-9517397f4103.e9699686-25c0-4fe7-84a8-94265b76506f?h=1280",
     "category": "Sports",
     "downloadLink": "https://store.steampowered.com/app/872431/Street_Basketball/",
-    "description": "Play 3v3 street basketball in urban courts.",
+    "description": "Experience the thrill of street sports in Street Basketball, where style meets skill. Team up in 3v3 matches on vibrant urban courts with realistic physics and flashy moves. Customize your player, unlock special dunks, and climb the global leaderboard. Every match is fast, fierce, and full of high-flying action.",
     "ratings": 4.5,
     "developer": "SportsHub"
   },
@@ -105,7 +105,7 @@
     "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmE6l3t3nmdUgu1I-8BeCXzp-Y0TdRXZtrOw&s",
     "category": "Strategy",
     "downloadLink": "https://store.steampowered.com/app/1020301/Robo_Wars/",
-    "description": "Build and battle robots in strategic arenas.",
+    "description": "Robo Wars is a strategic robot-battle simulator where you design, build, and command mechanical warriors. Plan your attacks, upgrade your mechs, and deploy them in high-stakes tournaments. Each robot has unique skills that can turn the tide of battle. Outsmart your opponents and dominate the arena in this tactical experience.",
     "ratings": 4.6,
     "developer": "MechSoft"
   },
@@ -115,7 +115,7 @@
     "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1078900/header.jpg",
     "category": "Adventure",
     "downloadLink": "https://store.steampowered.com/app/1078900/Island_Survival/",
-    "description": "Survive on a deserted island and craft your shelter.",
+    "description": "After a mysterious shipwreck, you find yourself stranded on a deserted island. Gather resources, craft tools, and build a shelter to survive the harsh environment. Hunt for food, explore hidden caves, and uncover the island’s dark secrets. Island Survival combines adventure, crafting, and storytelling into one unforgettable journey.",
     "ratings": 4.4,
     "developer": "IslandGames"
   },
@@ -124,8 +124,8 @@
     "title": "Racing Rivals",
     "coverPhoto": "https://cdn-www.bluestacks.com/bs-images/ip23USbCzdAS5LDlFDy06WQKvdfPnt0qYkON4CAJehIXup5WICylX7R84Py9BhEddGkK.png",
     "category": "Racing",
-    "downloadLink": "https://play.google.com/store/apps/details?id=com.racingrivals.game",
-    "description": "Compete in high-speed races with rivals worldwide.",
+    "downloadLink": "https://play.google.com/store/apps/details?id=com.playsportgames.motorsportrivals&hl=en",
+    "description": "Race against players worldwide in Racing Rivals, the ultimate test of speed and precision. Customize your car with performance upgrades and unique designs. Drift through tight corners, master the perfect launch, and leave your opponents in the dust. Compete in tournaments and become the champion of the streets.",
     "ratings": 4.7,
     "developer": "Speedster Studios"
   },
@@ -135,7 +135,7 @@
     "coverPhoto": "https://images.ctfassets.net/s5n2t79q9icq/5uSM9wV9SWCM14ouUW7BoR/6bd3c5df63f901e13ed4c094a6f4fa55/ab2scWUU5rI-HD.jpg",
     "category": "Simulation",
     "downloadLink": "https://store.steampowered.com/app/1042031/Magic_Academy/",
-    "description": "Train to become a powerful wizard in a magical school.",
+    "description": "Welcome to Magic Academy, where you’ll train to become one of the most powerful wizards in the realm. Attend classes, brew potions, and practice spells to master the arcane arts. Explore enchanted halls, uncover hidden mysteries, and form bonds with fellow students. Your choices shape your magical destiny in this enchanting life simulation.",
     "ratings": 4.8,
     "developer": "WizardWorks"
   },
@@ -145,7 +145,7 @@
     "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1030200/header.jpg",
     "category": "Sports",
     "downloadLink": "https://store.steampowered.com/app/1030200/Ultimate_Soccer/",
-    "description": "Play realistic soccer matches with advanced controls.",
+    "description": "Ultimate Soccer delivers realistic gameplay with advanced controls and immersive visuals. Build your dream team, compete in global tournaments, and climb the ranks to glory. Every match features smooth animations, lifelike physics, and smart AI opponents. Whether you play casually or competitively, this is soccer at its finest.",
     "ratings": 4.5,
     "developer": "GoalGames"
   }
