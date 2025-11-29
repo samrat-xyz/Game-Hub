@@ -29,6 +29,16 @@ function Navbar() {
           Games
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/about-us"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          About Us
+        </NavLink>
+      </li>
     </>
   );
 
@@ -37,7 +47,7 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="bg-base-300 shadow-md ">
       <div className="navbar w-11/12 mx-auto flex justify-between">
         <div className="flex items-center gap-2">
           <div className="dropdown lg:hidden">

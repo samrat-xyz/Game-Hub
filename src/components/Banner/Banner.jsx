@@ -27,7 +27,7 @@ function Banner() {
       >
         <SwiperSlide>
           <motion.img
-            src="https://images.ctfassets.net/s5n2t79q9icq/5uSM9wV9SWCM14ouUW7BoR/6bd3c5df63f901e13ed4c094a6f4fa55/ab2scWUU5rI-HD.jpg"
+            src="https://cms-assets.xboxservices.com/assets/be/10/be10aae2-852a-41bc-b345-804b52cfbe94.jpg?n=Games-Hub_Hero-Image-768_Fallout-4-Annv-Edt_1920x1080.jpg"
             alt="Game 1"
             className="w-full rounded-xl"
             {...slideAnimation}
@@ -36,7 +36,7 @@ function Banner() {
 
         <SwiperSlide>
           <motion.img
-            src="https://cdn-www.bluestacks.com/bs-images/ip23USbCzdAS5LDlFDy06WQKvdfPnt0qYkON4CAJehIXup5WICylX7R84Py9BhEddGkK.png"
+            src="https://wallpapers.com/images/hd/hd-video-game-ghost-recon-online-yeas0k7fls2o17j2.jpg"
             alt="Game 2"
             className="w-full rounded-xl"
             {...slideAnimation}
@@ -45,7 +45,7 @@ function Banner() {
 
         <SwiperSlide>
           <motion.img
-            src="https://static.download.it/scrs/aqf/com.glu.dragonslayer/screenshots/2CK0ErCueicrAZxurukisK114VTo_Awb5N9ZVxba05FS1eSOjEDBQCE7mdmN6Zw77Q=w720-h310.jpg"
+            src="https://wallpapers.com/images/featured/hd-game-7csw4v0tt93f26q6.jpg"
             alt="Game 3"
             className="w-full rounded-xl"
             {...slideAnimation}

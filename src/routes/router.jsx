@@ -12,6 +12,7 @@ import EditProfile from "../pages/EditProfile/EditProfile";
 import ProfilePage from "../components/ProfilePage/ProfilePage";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import ForgetPassword from "../pages/ForgetPassword/ForgetPassword";
+import About from "../pages/About/About";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
         path: "/games",
         loader: () => fetch("/data/games.json"),
         Component: Games,
+      },
+      {
+        path: "/about-us",
+        Component: About,
       },
       {
         path: "/game-details/:id",
