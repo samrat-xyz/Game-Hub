@@ -8,7 +8,6 @@ import Games from "../pages/Games/Games";
 import GameDetails from "../pages/GameDetails/GameDetails";
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import Profile from "../pages/Profile/Profile";
-import EditProfile from "../pages/EditProfile/EditProfile";
 import ProfilePage from "../components/ProfilePage/ProfilePage";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import ForgetPassword from "../pages/ForgetPassword/ForgetPassword";
@@ -69,14 +68,6 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Profile,
-      },
-      {
-        path: "/profile-page/edit-profile",
-        element: (
-          <PrivateRoute>
-            <EditProfile />
-          </PrivateRoute>
-        ),
       },
     ],
   },
