@@ -118,9 +118,9 @@ function Navbar() {
                     Profile
                   </Link>
                 </li>
-                <li>
-                  <button onClick={logoutHandler}>Logout</button>
-                </li>
+                
+                  <button onClick={logoutHandler} className="bg-secondary py-1 rounded-lg cursor-pointer font-bold">Logout</button>
+                
               </ul>
             </div>
           ) : (
@@ -135,12 +135,12 @@ function Navbar() {
       </div>
 
       {/* MOBILE Search */}
-      <div className="lg:hidden px-4 pb-3 relative">
+      <div className="lg:hidden px-4 pb-3 relative mt-2">
         <FiSearch className="absolute left-6 top-6 text-gray-500" />
         <input
           type="text"
           placeholder="Search games..."
-          className="input input-bordered w-full pl-10 text-sm rounded-full shadow-sm"
+          className="input input-bordered w-full pl-10 text-sm rounded-full shadow-sm border-primary focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all bg-black text-secondary"
         />
       </div>
     </div>
