@@ -3,11 +3,17 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
 }
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #8B5CF6;
+  --color-secondary: #EC4899;
+}
 *{
  font-family: "Inter", sans-serif;
 }
 
 body{
-   background-color: #f9f9f9;
-   
+   background-color: #000000; 
+   color: white;
 }
