@@ -19,10 +19,10 @@ function Footer() {
         
         <div className="flex flex-col space-y-2">
           <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
-          <Link  className="text-sm hover:text-primary">Home</Link>
-          <Link className="text-sm hover:text-primary">Games</Link>
-          <Link  className="text-sm hover:text-primary">About</Link>
-          <Link  className="text-sm hover:text-primary">Contact</Link>
+          <Link to='/'  className="text-sm hover:text-primary">Home</Link>
+          <Link to='/games' className="text-sm hover:text-primary">Games</Link>
+          <Link to='/about-us'  className="text-sm hover:text-primary">About</Link>
+         
         </div>
 
       
