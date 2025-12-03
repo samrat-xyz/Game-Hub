@@ -39,13 +39,13 @@ function Navbar() {
 
        
         <div className="hidden lg:flex w-1/3 relative">
-          <FiSearch className="absolute left-3 top-3 text-gray-500" />
+          
           <input
             type="text"
             placeholder="Search games..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
-            className="input input-bordered w-full pl-10 bg-black text-white rounded-full"
+            className="input input-bordered w-full pl-10 bg-black text-white rounded-full border-primary"
           />
 
           
@@ -92,13 +92,13 @@ function Navbar() {
 
       
       <div className="lg:hidden px-4 pb-3 relative mt-2">
-        <FiSearch className="absolute left-6 top-6 text-gray-500" />
+       
         <input
           type="text"
           placeholder="Search games..."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-          className="input input-bordered w-full pl-10 bg-black text-white rounded-full"
+          className="input input-bordered w-full pl-10 bg-black text-white rounded-full border-primary"
         />
 
         
@@ -110,7 +110,7 @@ function Navbar() {
                   key={game.id}
                   onClick={() => {
                     setSearchText("");
-                    navigate(`/games/${game.id}`);
+                    navigate(`/game-details/${game.id}`);
                   }}
                   className="px-4 py-2 hover:bg-primary cursor-pointer text-sm border-b border-gray-700"
                 >
