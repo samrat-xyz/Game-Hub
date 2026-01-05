@@ -1,7 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router";
-import logoImg from '../../assets/logo.jpeg'
 function Footer() {
   return (
     <footer className="bg-black mt-10 border-t text-white">
@@ -9,7 +8,7 @@ function Footer() {
         
         
         <div className="space-y-3">
-          <img src={logoImg} alt="" className="w-16 rounded-full"/>
+          <span className="text-2xl font-bold text-primary">GameHub</span>
           <p className="text-sm text-gray-500">
             Discover and download the best games around the world. 
             Join our growing community of gamers today!

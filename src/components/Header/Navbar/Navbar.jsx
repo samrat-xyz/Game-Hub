@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../../../context/AuthContext";
-import logoImg from "../../../assets/logo.jpeg";
 import { FaSpinner } from "react-icons/fa";
-import { FiSearch } from "react-icons/fi";
 
 function Navbar() {
   const { user, logoutUser, loading } = useContext(AuthContext);
@@ -33,7 +31,7 @@ function Navbar() {
 
      
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoImg} alt="logo" className="w-12 rounded-full" />
+          
           <span className="text-2xl font-bold text-primary">GameHub</span>
         </Link>
 
